@@ -1,7 +1,11 @@
 require 'capybara/rspec'
 require 'capybara/feature_helpers'
 
+require 'capybara/webkit'
+require 'capybara/poltergeist'
+
 require_relative 'support/test_app'
+require_relative 'support/drivers'
 
 Capybara.app = TestApp
 
