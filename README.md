@@ -5,6 +5,8 @@ Set of handy capybara feature helpers used by Railsware:
 * `within_maybe`
 * `should_see_text`
 * `should_not_see_text`
+* `should_see_element`
+* `should_not_see_element`
 
 ## Requirements
 
