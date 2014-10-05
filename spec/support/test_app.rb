@@ -1,5 +1,6 @@
 class TestApp
   class << self
+    attr_accessor :style
     attr_accessor :body
 
     def call(env)
@@ -10,7 +11,7 @@ class TestApp
 
     def build_body
       [
-        "<html><body>#{body}</body></html>"
+        "<html><style>#{style}</style><body>#{body}</body></html>"
       ]
     end
   end
