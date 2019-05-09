@@ -8,6 +8,10 @@ describe 'should_see_text', type: :feature do
 
       <div class="container">
         <div>Content</div>
+        <div>Multilined
+          <br />
+          content
+        </div>
       </div>
     BODY
   end
@@ -16,6 +20,10 @@ describe 'should_see_text', type: :feature do
     context driver, driver: driver do
       it 'should see' do
         should_see_text 'Hello World'
+      end
+
+      it 'should see' do
+        should_see_text 'Multilined content'
       end
 
       it 'should not see' do

@@ -16,11 +16,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.6"
+  spec.add_development_dependency "bundler", ">= 1.6"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0.0"
-  spec.add_development_dependency "capybara", "~> 2.4.0"
-  spec.add_development_dependency "selenium-webdriver", "~> 2.43.0"
-  spec.add_development_dependency "capybara-webkit", "~> 1.3.0"
-  spec.add_development_dependency "poltergeist", "~> 1.5.0"
+  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "capybara", "~> 3.5"
+  spec.add_development_dependency "selenium-webdriver", "~> 3.0"
+  spec.add_development_dependency "capybara-webkit", "~> 1.3"
+  spec.add_development_dependency "poltergeist", "~> 1.5"
 end

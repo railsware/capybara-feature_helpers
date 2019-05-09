@@ -8,6 +8,7 @@ require_relative 'support/test_app'
 require_relative 'support/drivers'
 
 Capybara.app = TestApp
+Capybara.server = :webrick
 
 RSpec.configure do |config|
   config.before(:each) do
